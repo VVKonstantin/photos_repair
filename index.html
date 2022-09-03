@@ -23,7 +23,7 @@
         <h1 class="header__main-heading">Ремонт
           <span class="header__subtitle">Плёночных фотоаппаратов</span>
         </h1>
-      <form class="form form__header">
+      <form class="form header__form">
         <div class="contact-form">
           <div class="contact-form__container">
             <input type="email" class="contact-form__input">
@@ -71,26 +71,28 @@
 
       <section class="container warranty">
         <h2 class="warranty__title">Полная гарантия<img src="images/high-voltage.png" alt="Значок молнии" class="warranty__image"></h2>
-        <div class="warranty__cards-container">
-          <div class="card-small">
+
+        <ul class="warranty__cards-container">
+          <li class="card-small">
             <h3 class="card-small__heading">CLA</h3>
             <p class="card-small__text">После CLA мы даем гарантию на 1 год, в случае беды мы заново обслужим вашу
               камеру.</p>
-          </div>
-          <div class="card-small">
+          </li>
+          <li class="card-small">
             <h3 class="card-small__heading">Ремонт</h3>
             <p class="card-small__text">После ремонта мы даем гарантию на 3 месяца или 6 месяцев.</p>
-          </div>
-          <div class="card-small">
+          </li>
+          <li class="card-small">
             <h3 class="card-small__heading">Пайка и адаптация</h3>
             <p class="card-small__text">После пайки и адаптации питания мы даем гарантию
               на 1 год.</p>
-          </div>
-          <div class="card-small">
+          </li>
+          <li class="card-small">
             <h3 class="card-small__heading">Осмотр</h3>
             <p class="card-small__text">Осмотр камеры — бесплатен, если мы что-то сломаем, поменяем деталь сами.</p>
-          </div>
-        </div>
+          </li>
+        </ul>
+
       </section>
       <section class="container support">
         <h2 class="support__title">Поддержите нас<img src="images/handsshake.png" alt="Эмодзи рукопожатие" class="support__image"></h2>
@@ -110,10 +112,10 @@
       </div>
 
       <div class="footer__container">
-        <form class="form form__footer">
+        <form class="form footer__form">
           <div class="contact-form">
             <div class="contact-form__container">
-              <input type="email" class="contact-form__input">
+              <input type="email" class="contact-form__input contact-form__input_place_footer">
               <button class="contact-form__btn" type="submit"><span class="contact-form__btn-text">Отремонтируйте камеру</span>
                 <img src="images/fingers-ok.png" alt="Эмодзи ок" class="contact-form__image"></button>
             </div>

@@ -33,6 +33,11 @@
       justify-content: flex-start;
       align-items: flex-start;
     }
+
+    @media screen and (max-width: $mediamobile) {
+      padding-top: 184px;
+    }
+
   }
 
   &__copyright {
@@ -43,7 +48,7 @@
       padding-top: 60px;
     }
 
-    @media screen and (max-width: $mediatablet) {
+    @media screen and (max-width: $mediamobile) {
       padding-top: 40px;
     }
   }

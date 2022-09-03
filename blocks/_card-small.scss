@@ -6,6 +6,10 @@
   padding: 20px;
   box-sizing: border-box;
 
+  &:hover {
+    background: $card-hover-color;
+  }
+
   &__heading {
     @include card-rubric;
     font-weight: 500;

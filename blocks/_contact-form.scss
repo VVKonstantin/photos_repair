@@ -27,7 +27,7 @@
     padding: 13px 16px;
     flex-shrink: 0;
 
-    @media screen and (max-width: $mediatablet) {
+     @media screen and (max-width: $mediatablet) {
       flex-basis: 427px;
     }
 
@@ -35,6 +35,16 @@
       flex-basis: 229px;
     }
 
+    &_place_footer {
+      @media screen and (max-width: $mediatablet) {
+        flex-basis: 348px;
+      }
+
+      @media screen and (max-width: $mediamobile) {
+        flex-basis: 229px;
+      }
+
+    }
   }
 
   &__input:hover {
