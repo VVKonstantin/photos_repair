@@ -1,0 +1,11 @@
+.page {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background: $bg-color;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  color: $font-color;
+  font-family: $font-name;
+  font-weight: $font-weight-standart;
+  font-style: $font-style;
+}

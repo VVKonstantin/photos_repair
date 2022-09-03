@@ -1,0 +1,50 @@
+.header {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: $mediatablet) {
+    padding-bottom: 32px;
+  }
+
+  @media screen and (max-width: $mediamobile) {
+    padding-top: 24px;
+    padding-bottom: 20px;
+  }
+
+  &__main-heading {
+    padding: 60px 0 230px;
+    margin: 0;
+    @include main-heading($desktop);
+
+    @media screen and (max-width: $mediatablet) {
+      padding-top: 70px;
+      padding-bottom: 470px;
+      @include main-heading($mediatablet);
+    }
+
+    @media screen and (max-width: $mediamobile) {
+      padding-top: 60px;
+      padding-bottom: 260px;
+      @include main-heading($mediamobile);
+    }
+
+  }
+
+  &__subtitle {
+    padding: 20px 0 0;
+    margin: 0;
+    display: block;
+    @include heading-subtitle($desktop);
+
+    @media screen and (max-width: $mediatablet) {
+      padding-top: 0;
+      @include heading-subtitle($mediatablet);
+    }
+
+    @media screen and (max-width: $mediamobile) {
+      padding-top: 10px;
+      @include heading-subtitle($mediamobile);
+    }
+
+  }
+}

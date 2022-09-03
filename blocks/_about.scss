@@ -1,0 +1,52 @@
+.about {
+
+  @media screen and (max-width: $mediamobile) {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  &__text {
+    @include section-text($desktop);
+    margin: 0;
+    padding: 0;
+
+    @media screen and (max-width: $mediatablet) {
+      @include section-text($mediatablet);
+    }
+
+    @media screen and (max-width: $mediamobile) {
+      @include section-text($mediamobile);
+    }
+  }
+
+  &__title {
+    @include section-title($desktop);
+    padding: 60px 0 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: $mediatablet) {
+      @include section-title($mediatablet);
+    }
+
+    @media screen and (max-width: $mediamobile) {
+      padding-top: 20px;
+      @include section-title($mediamobile);
+    }
+  }
+
+  &__image {
+    height: 30px;
+    padding-left: 12px;
+
+    @media screen and (max-width: $mediatablet) {
+      height: 20px;
+    }
+
+    @media screen and (max-width: $mediamobile) {
+      height: 12px;
+      padding-left: 8px;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.contact-form {
+
+  &__container {
+    display: flex;
+    width: 100%;
+    max-width: 569px;
+
+    @media screen and (max-width: $mediatablet) {
+      max-width: 648px;
+    }
+
+    @media screen and (max-width: $mediamobile) {
+      max-width: 280px;
+    }
+  }
+
+  &__input {
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+    flex-basis: 348px;
+    background: $field-color;
+    border-radius: 8px 0px 0px 8px;
+    @include btn-text($desktop);
+    padding: 13px 16px;
+    flex-shrink: 0;
+
+    @media screen and (max-width: $mediatablet) {
+      flex-basis: 427px;
+    }
+
+    @media screen and (max-width: $mediamobile) {
+      flex-basis: 229px;
+    }
+
+  }
+
+  &__input:hover {
+    background: $field-color-active;
+  }
+
+  &__input:focus {
+    outline: none;
+  }
+
+  &__btn {
+    @include btn-text($desktop);
+    height: 50px;
+    width: 100%;
+    flex-basis: 221px;
+    cursor: pointer;
+    background-color: $btn-color;
+    border-radius: 0 8px 8px 0;
+    border: none;
+    flex-shrink: 0;
+    padding: 15px 27px 11px 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    @media screen and (max-width: $mediamobile) {
+      max-width: 51px;
+      padding-left: 15px;
+      padding-right: 36px;
+    }
+  }
+
+  &__btn-text {
+    position: relative;
+    white-space: nowrap;
+
+    @media screen and (max-width: $mediamobile) {
+      visibility: hidden;
+      width: 0;
+    }
+  }
+
+  &__image {
+    width: 11px;
+    padding-left: 10px;
+
+    @media screen and (max-width: $mediamobile) {
+      padding-left: 20px;
+    }
+
+    &_nonactive {
+      display: none;
+
+      @media screen and (max-width: $mediamobile) {
+        display: block;
+      }
+
+    }
+  }
+
+  &__text {
+    @include form-subtitle;
+    padding: 12px 0 0 10px;
+    margin: 0;
+  }
+}

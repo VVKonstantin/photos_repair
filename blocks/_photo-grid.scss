@@ -1,0 +1,82 @@
+.photo-grid {
+  @include base-container;
+  padding: {
+    left: 30px;
+    right: 30px;
+  }
+
+  @media screen and (max-width: $mediatablet) {
+    padding: {
+      top: 20px;
+      left: 60px;
+      right: 60px;
+    }
+  }
+
+  @media screen and (max-width: $mediamobile) {
+    padding: {
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+    }
+  }
+
+  &__first-row {
+    display: grid;
+    grid-template-columns: 448px 1fr;
+    min-height: 230px;
+    gap: 20px;
+
+    @media screen and (max-width: $mediamobile) {
+      grid-template-columns: 1fr;
+      }
+  }
+
+  &__first-image {
+    border-radius: 10px;
+
+    @media screen and (max-width: $mediamobile) {
+      width: 100%;
+      }
+  }
+
+  &__yellow-rect {
+    background: $yellow-rect;
+    border-radius: 10px;
+
+    @media screen and (max-width: $mediamobile) {
+      width: 100%;
+      height: 67px;
+      }
+
+  }
+
+  &__second-row {
+    width: 100%;
+    padding-top: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: minmax(173px, 630px) minmax(455px, 730px);
+
+    @media screen and (max-width: $mediamobile) {
+      grid-template-columns: 1fr;
+      }
+
+  }
+
+  &__green-rect {
+    background: $sup-color;
+    border-radius: 10px;
+
+    @media screen and (max-width: $mediamobile) {
+      height: 124px;
+      }
+  }
+
+  &__second-image {
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+  }
+}
+

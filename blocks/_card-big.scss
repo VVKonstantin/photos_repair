@@ -1,0 +1,55 @@
+.card-big {
+  width: 100%;
+  cursor: pointer;
+  background: $card-color;
+  border-radius: 16px;
+  padding: 40px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: $mediamobile) {
+    padding: 20px;
+  }
+
+  &__rubric {
+    @include card-rubric;
+    margin: 0;
+    font-weight: 400;
+    color: $font-section-color;
+  }
+
+  &__title {
+    @include card-title($desktop);
+    margin: 0;
+    padding: 20px 0 40px;
+
+    @media screen and (max-width: $mediamobile) {
+      @include card-title($mediamobile);
+      padding-top: 10px;
+      padding-bottom: 28px;
+    }
+
+  }
+
+  &__text {
+    @include section-text($desktop);
+    color: $font-section-color;
+    margin: 0;
+    min-height: 160px;
+
+    @media screen and (max-width: $mediamobile) {
+      @include section-text($mediamobile);
+      min-height: 136px;
+    }
+  }
+
+  &__price {
+    color: $sup-color;
+    @include card-price($desktop);
+    margin: 0;
+
+  @media screen and (max-width: $mediamobile) {
+    @include card-price($mediamobile);
+  }
+}
+
+}
