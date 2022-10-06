@@ -1,0 +1,37 @@
+.logo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-left: 6px;
+
+  @media screen and (max-width: $mediamobile) {
+    gap: 16px;;
+    }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    @include logo-text($desktop);
+
+    @media screen and (max-width: $mediamobile) {
+      @include logo-text($mediamobile);
+      }
+    }
+
+  &__frame {
+    display: flex;
+    color: $bg-color;
+    background-color: $sup-color;
+    @include logo-text-small;
+    height: 20px;
+    width: 99px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+
+  &__text-frame {
+    padding: 0;
+    margin: 0;
+  }
+}

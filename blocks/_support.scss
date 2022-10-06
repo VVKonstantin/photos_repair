@@ -1,0 +1,80 @@
+.support {
+
+  @media screen and (max-width: $mediamobile) {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  &__title {
+    @include section-title($desktop);
+    margin: 0;
+    margin-bottom: 90px;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: $mediatablet) {
+      @include section-title($mediatablet);
+      margin-bottom: 80px;
+    }
+
+    @media screen and (max-width: $mediamobile) {
+      margin-bottom: 50px;
+      @include section-title($mediamobile);
+    }
+  }
+
+  &__support-btn {
+    display: flex;
+    border-radius: 8px;
+    background: $btn-color;
+    width: 100%;
+    max-width: 306px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: $mediamobile) {
+      max-width: 280px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    @include btn-text($desktop);
+    width: 100%;
+    height: 100%;
+
+    @media screen and (max-width: $mediamobile) {
+      @include btn-text($mediamobile);
+    }
+  }
+
+  &__text {
+    @include section-text($desktop);
+    margin: 0;
+    padding: 50px 0 0;
+
+    @media screen and (max-width: $mediatablet) {
+      padding-top: 40px;
+      @include section-text($mediatablet);
+    }
+
+    @media screen and (max-width: $mediamobile) {
+      padding-top: 30px;
+      @include section-text($mediamobile);
+    }
+  }
+
+  &__image {
+    height: 30px;
+    padding-left: 12px;
+    @media screen and (max-width: $mediatablet) {
+      height: 20px;
+    }
+
+    @media screen and (max-width: $mediamobile) {
+      height: 12px;
+      padding-left: 8px;
+    }
+  }
+}

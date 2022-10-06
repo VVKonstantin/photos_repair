@@ -1,0 +1,21 @@
+.container {
+  padding: {
+    left: 160px;
+    right: 160px;
+  }
+  @include base-container;
+
+  @media screen and (max-width: $mediatablet) {
+    padding: {
+      left: 60px;
+      right: 60px;
+    }
+  }
+
+  @media screen and (max-width: $mediamobile) {
+    padding: {
+      left: 20px;
+      right: 20px;
+    }
+  }
+}

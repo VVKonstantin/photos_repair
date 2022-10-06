@@ -1,0 +1,29 @@
+.card-small {
+  background: $card-color;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+
+  &:hover {
+    background: $card-hover-color;
+  }
+
+  &__heading {
+    @include card-rubric;
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: 38px;
+  }
+
+  &__text {
+    @include card-small-text($desktop);
+    color: $font-section-color;
+    margin: 0;
+
+    @media screen and (max-width: $mediamobile) {
+      @include card-small-text($mediamobile);
+    }
+  }
+}
