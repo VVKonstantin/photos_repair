@@ -1,10 +1,10 @@
-# Опциональный проект: Ремонт пленочных фотоаппаратов от Яндекс Практикум, курс Веб разработчик плюс, спринт 4
+# Optional project: Repair of film cameras from Yandex Practicum
 
-### Представляет собой одностраничный сайт, верстка выполнена в соответствии с макетом в Figma
+### It is a one-page site, the layout is made in accordance with the layout in Figma
 
-https://konstantingravvavilov.github.io/photos_repair/
+you may see it here https://vvkonstantin.github.io/photos_repair/
 
-В ходе выполнения были отработаны
+What was done during the course of implementation:
 
-1. Работа с препроцессором SASS
-2. Стилизация страницы и функционала сайта в соответствии с предложенным макетом с соблюдением основ адаптивной и резиновой верстки
+1. Working with the SASS preprocessor
+2. Styling the page and site functionality in accordance with the proposed layout, observing the basics of adaptive and fluid layout
