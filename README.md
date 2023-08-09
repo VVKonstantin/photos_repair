@@ -1,10 +1,11 @@
-# Optional project: Repair of film cameras from Yandex Practicum
+# Optional project: Repair of film cameras
 
 ### It is a one-page site, the layout is made in accordance with the layout in Figma
 
-you may see it here https://vvkonstantin.github.io/photos_repair/
+you may see it [here](https://vvkonstantin.github.io/photos_repair/)
 
-What was done during the course of implementation:
+Topics that have been worked out:
 
-1. Working with the SASS preprocessor
-2. Styling the page and site functionality in accordance with the proposed layout, observing the basics of adaptive and fluid layout
+1. Adaptive layout using flexboxes and grids based on the layout in Figma
+2. Working with the ![SASS](https://img.shields.io/badge/-SASS-333?&logo=SASS) preprocessor
+3. Styling the page and site functionality in accordance with the proposed layout, observing the basics of adaptive and fluid layout
